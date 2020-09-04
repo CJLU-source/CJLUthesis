@@ -1,0 +1,40 @@
+% !Mode:: "TeX:UTF-8"
+\documentclass[bachelor,openany,oneside,color]{preset/customstyle}
+
+% 参考文献
+\usepackage{preset/gbt7714}
+\usepackage{hyperref}
+% 参考文献输出方式，numerical为按照出现顺序，authoryear为按照作者姓名和年份
+\citestyle{numerical}
+
+% \citestyle{authoryear}
+
+\begin{document}
+
+% 用户信息
+\include{main/person_info}
+
+% 页眉页脚样式
+\pagestyle{mainmatter}
+% 封面、任务书、声明
+\maketitle
+% 摘要
+\include{main/abstract}
+% 目录
+\tableofcontents
+
+% 正文页码样式
+\mainmatter
+
+% 正文
+\include{main/body}
+
+% 致谢
+\include{main/acknowledgement}
+% 参考文献
+\include{main/reference}
+
+% 附录
+\appendix
+\include{main/appendix}
+\end{document}
