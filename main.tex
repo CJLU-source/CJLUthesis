@@ -4,6 +4,7 @@
 % 参考文献
 \usepackage{preset/gbt7714}
 \usepackage{hyperref}
+\usepackage{titlesec}
 % 参考文献输出方式，numerical为按照出现顺序，authoryear为按照作者姓名和年份
 \citestyle{numerical}
 
@@ -16,8 +17,13 @@
 
 % 页眉页脚样式
 \pagestyle{mainmatter}
+
 % 封面、任务书、声明
 \maketitle
+
+% 致谢
+\include{main/acknowledgement}
+
 % 摘要
 \include{main/abstract}
 % 目录
@@ -29,8 +35,6 @@
 % 正文
 \include{main/body}
 
-% 致谢
-\include{main/acknowledgement}
 % 参考文献
 \include{main/reference}
 
