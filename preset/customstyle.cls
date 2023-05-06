@@ -73,12 +73,12 @@
 \RequirePackage{geometry}
 \newgeometry{
     top=30mm, bottom=25mm, left=30mm, right=20mm,
-    headsep=5mm, includefoot
+    headsep=15mm, includefoot
 }
 \savegeometry{bachelorgeometry}
 \newgeometry{
     top=25mm, bottom=25mm, left=30mm, right=20mm,
-    headsep=5mm, headheight=10mm, footskip=10mm,
+    headsep=15mm, headheight=10mm, footskip=10mm,
 }
 \savegeometry{mastergeometry}
 
